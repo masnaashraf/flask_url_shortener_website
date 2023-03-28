@@ -12,7 +12,8 @@ Enter your lengthy url and get the shortened version
 
 
 <form action="{{url_for('add_input')}}" method='post'>
-    <input type="text" name="url_L" placeholder="Enter the url to shorten">
+    
+    <input type="text"  name="url_L" placeholder="Enter the url to shorten">
    
     <button>Shorten the url</button>
 
@@ -21,7 +22,8 @@ Enter your lengthy url and get the shortened version
 
 {% if short %}
     <p>
-        <input type="text" placeholder="Shortened url" value="{{short}}" id="shortened-url">
+
+        <input type="text"  placeholder="Shortened url" value="{{short}}" id="shortened-url">
         <button onclick="copyToClipboard()">Copy the url</button>
     </p>
 {% endif %}
