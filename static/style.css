@@ -9,6 +9,7 @@ header {
   background-color: #4285f4;
   color: white;
   padding: 1rem;
+  
 }
 
 nav ul {
@@ -69,7 +70,7 @@ padding: 10px;
 font-size: 16px;
 border: 1px solid #ccc;
 border-radius: 4px;
-max-width: 100%;
+width:80%;
 margin-bottom: 10px;
 display: block;
 margin-top: 10px;
