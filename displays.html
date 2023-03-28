@@ -1,0 +1,47 @@
+{%extends 'layout.html' %}
+
+{% block title%}
+Display
+{% endblock %}
+
+{% block header %}
+Welcome To The Display Page
+<h3>All the url with its shortened version : </h3>
+{% endblock %}
+
+{% block content %}
+<form action="{{ url_for('display_items') }}" method="POST">
+  <button type="submit">Clear history</button>
+</form>
+
+
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>URL</th>
+        <th>Shortened URL</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in items %}
+      <tr>
+        <td>{{ item.id }}</td>
+        <td>{{ item.url }}</td>
+        <td>{{ item.short_url }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+ 
+{% endblock %}
+  
+  
+  
+  
+  
+  
+
+
+
