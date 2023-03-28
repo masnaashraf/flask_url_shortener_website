@@ -1,7 +1,0 @@
-flask
-flask_sqlalchemy
-flask_migrate
-pyshorteners
-gunicorn
-urllib
-validators
